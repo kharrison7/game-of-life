@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <head>
+      <meta charset="UTF-8">
+      <title>Game of Life - Kevin Harrison</title>
+      <link rel="stylesheet" href="game-of-life.css">
+      <script type="text/javascript" src="game-of-life-logic.js"></script>
+      <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+  </head>
+  <body>
+    <div class="container" x-data="gameRun()" x-init="initialise()">
+      <h1>Game of Life</h1>
+      <canvas></canvas>
+      <button x-on:click="toggleStart()" x-html="startButton"></button>
+      <button x-on:click="step()" x-bind:disabled="requestId !== null">Step</button>
+      <button x-on:click="reset()">Reset</button>
+    </div>
+  </body>
+</html>
