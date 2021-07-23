@@ -131,7 +131,7 @@ function gameRun() {
         reset() {
             this.stop();
             this.setupGrid();
-            this.seedCells(200); //set up the number of live cells
+            this.seedCells(400); //set up the number of live cells
             this.drawGrid();
         },
         initialise() {

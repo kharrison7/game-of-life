@@ -11,9 +11,9 @@
     <div class="container" x-data="gameRun()" x-init="initialise()">
       <h1>Game of Life</h1>
       <canvas></canvas>
-      <button x-on:click="toggleStart()" x-html="startButton"></button>
-      <button x-on:click="step()" x-bind:disabled="requestId !== null">Step</button>
-      <button x-on:click="reset()">Reset</button>
+      <a class="button" x-on:click="toggleStart()" x-html="startButton"></a>
+      <a class="button" x-on:click="step()" x-bind:disabled="requestId !== null">Step</a>
+      <a class="button" x-on:click="reset()">Reset</a>
     </div>
   </body>
 </html>

@@ -1,7 +1,7 @@
 body {
     background-color: white;
-    color: black;
-    font-family: courier,arial,helvetica;;
+    color: #000000;
+    font-family: 'Roboto',sans-serif;
 }
 
 .container {
@@ -17,4 +17,23 @@ canvas {
     border: 2px solid grey;
     width: 1000px;
     height: 500px;
+}
+
+a.button {
+    display:inline-block;
+    padding:0.35em 1.2em;
+    border:0.1em solid #000000;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:#000000;
+    text-align:center;
+    transition: all 0.2s;
+}
+a.button:hover{
+    color:#FFFFFF;
+    background-color:#000000;
 }
